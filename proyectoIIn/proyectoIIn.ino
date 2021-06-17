@@ -1,7 +1,4 @@
-#include <Nokia_LCD.h>
-#include <SPI.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_PCD8544.h>  
+
 
 #define PIN_RESET 12          
 #define PIN_SCE   11     
@@ -47,7 +44,7 @@ void LcdInitialise(void)
   pinMode(PIN_DC, OUTPUT);
   pinMode(PIN_SDIN, OUTPUT);
   pinMode(PIN_SCLK, OUTPUT);
-  digitalWrite(PIN_RESET, LOW);  moverse 
+  digitalWrite(PIN_RESET, LOW);  //moverse 
   digitalWrite(PIN_RESET, HIGH);
   LcdWrite(LCD_C, 0x21 );
   LcdWrite(LCD_C, 0xB1 );
@@ -76,8 +73,8 @@ void LcdBitmap(int my_array[]){
   }
 void setup(void)
 {
-  LcdInitialise(); inicia el lcd 
-  LcdClear();    limpia la pantalla 
+  LcdInitialise(); //inicia el lcd 
+  LcdClear();    //limpia la pantalla 
   gotoXY(0,0);
 }
 void loop(void)
