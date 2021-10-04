@@ -1,5 +1,4 @@
 #include <Nokia_LCD.h>
-
 #define PIN_RESET 12          
 #define PIN_SCE   11     
 #define PIN_DC    10
