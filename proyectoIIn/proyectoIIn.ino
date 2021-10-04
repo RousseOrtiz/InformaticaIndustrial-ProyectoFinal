@@ -6,6 +6,7 @@
 #define PIN_SCLK  8                                            
 #define LCD_C     LOW 
 #define LCD_D     HIGH
+
 #define LCD_X     84   //tamaño de la matriz
 #define LCD_Y     48
 int p[]={
